@@ -1,0 +1,782 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf793b7ca1cc645b9cd36d753b8e3c, type: 3}
+  m_Name: OpenTalkReference
+  m_EditorClassIdentifier: 
+  url: https://devot.ap-mic.com/v1/graphql
+  queries:
+  - name: GetVirtualCharacter
+    type: 0
+    query: "query GetVirtualCharacter{\n    virtual_idol_conf{\n        character\n   
+      }\n}"
+    queryString: virtual_idol_conf
+    returnType: virtual_idol_conf
+    queryOptions:
+    - ad_content
+    - ad_content_by_pk
+    - apmt
+    - apmt_by_pk
+    - apmt_clinic_business_hour
+    - apmt_conf
+    - apmt_conf_by_pk
+    - apmt_employee
+    - apmt_employee_by_pk
+    - apmt_employee_procedure
+    - apmt_employee_procedure_by_pk
+    - apmt_procedure
+    - apmt_procedure_by_pk
+    - apmt_procedure_category
+    - apmt_procedure_category_by_pk
+    - binding
+    - binding_by_pk
+    - binding_tag
+    - binding_tag_by_pk
+    - coupon
+    - coupon_by_pk
+    - coupon_participant
+    - coupon_participant_aggregate
+    - d_member_postback
+    - d_member_postback_by_pk
+    - d_member_session
+    - device_member
+    - device_member_by_pk
+    - device_member_tag
+    - device_member_tag_by_pk
+    - device_response
+    - disability_card
+    - disability_card_by_pk
+    - event
+    - event_by_pk
+    - human_agent_response
+    - id_card
+    - id_card_by_pk
+    - iii_tts_conf
+    - kf_feedback
+    - kf_feedback_by_pk
+    - lottery
+    - lottery_by_pk
+    - lottery_participant
+    - lottery_participant_by_pk
+    - lottery_prize
+    - lottery_prize_aggregate
+    - lottery_prize_by_pk
+    - meco_procedure
+    - meco_procedure_by_pk
+    - meco_reservation
+    - meco_reservation_config
+    - meco_reservation_period
+    - meco_reservation_period_by_pk
+    - meco_visit_config
+    - meco_visit_log
+    - meco_visit_log_by_pk
+    - meco_yuan_apply_service
+    - meco_yuan_apply_service_by_pk
+    - meco_yuan_survey
+    - meco_yuan_survey_by_pk
+    - member
+    - member_by_pk
+    - message
+    - nlp_feedback
+    - nlp_feedback_by_pk
+    - poll
+    - poll_by_pk
+    - poll_participant
+    - poll_participant_aggregate
+    - poll_participant_by_pk
+    - privacy
+    - quiz
+    - quiz_by_pk
+    - quiz_participant
+    - quiz_participant_aggregate
+    - quiz_participant_by_pk
+    - quiz_question
+    - quiz_question_aggregate
+    - quiz_question_by_pk
+    - quiz_question_option
+    - quiz_question_option_aggregate
+    - quiz_question_option_by_pk
+    - quiz_result
+    - quiz_result_aggregate
+    - quiz_result_by_pk
+    - realsun_disease
+    - realsun_disease_by_pk
+    - realsun_exam
+    - realsun_exam_by_pk
+    - realsun_item
+    - realsun_item_by_pk
+    - realsun_medical_record
+    - realsun_medical_record_by_pk
+    - realsun_vital_sign
+    - realsun_vital_sign_by_pk
+    - reservation
+    - reservation_aggregate
+    - reservation_by_pk
+    - reservation_period
+    - reservation_period_by_pk
+    - siir_aitek_face
+    - sm_carousel
+    - sm_carousel_by_pk
+    - sm_carousel_item
+    - sm_carousel_item_btn
+    - sm_carousel_item_by_pk
+    - sm_carousel_item_choice
+    - sm_carousel_item_choice_by_pk
+    - sm_image_map
+    - sm_image_map_by_pk
+    - sm_image_map_item
+    - sm_image_map_item_by_pk
+    - sm_nav
+    - sm_nav_by_pk
+    - sm_nav_item
+    - sm_nav_item_by_pk
+    - stream
+    - stream_archive
+    - stream_by_pk
+    - stream_device_member
+    - stream_participant
+    - stream_participant_aggregate
+    - stream_tag
+    - stream_timeline
+    - stream_timeline_by_pk
+    - survey
+    - survey_by_pk
+    - survey_participant
+    - survey_participant_aggregate
+    - survey_participant_by_pk
+    - survey_question
+    - survey_question_by_pk
+    - survey_question_option
+    - survey_question_option_aggregate
+    - survey_question_option_by_pk
+    - t_care_continuous_prescription
+    - t_care_continuous_prescription_by_pk
+    - t_care_medicine
+    - t_care_prescription_image
+    - tag
+    - tag_aggregate
+    - tag_by_pk
+    - tag_trigger
+    - tag_trigger_by_pk
+    - tag_trigger_participant
+    - tag_trigger_participant_by_pk
+    - trace_url
+    - trace_url_by_pk
+    - unity_asset
+    - user_device
+    - virtual_idol_conf
+    - vonage_broadcast
+    - vonage_broadcast_aggregate
+    - vonage_broadcast_by_pk
+    - vonage_broadcast_device_member
+    - vonage_broadcast_device_member_by_pk
+    - vonage_broadcast_log
+    - vonage_broadcast_log_aggregate
+    - vonage_broadcast_log_by_pk
+    - vonage_broadcast_tag
+    - vonage_broadcast_tag_by_pk
+    - vonage_config
+    - vonage_event
+    - vonage_event_by_pk
+    - yj_article
+    - yj_article_aggregate
+    - yj_article_by_pk
+    - yj_article_tag
+    - yj_article_tag_by_pk
+    - yj_binding
+    - yj_seminar
+    - yj_seminar_by_pk
+    - yj_seminar_link
+    - yj_seminar_link_by_pk
+    - yj_seminar_tag
+    fields:
+    - index: 0
+      name: character
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: String
+      - name: speed_rate
+        type: float8
+      - name: tone
+        type: float8
+      - name: tts_provider
+        type: String
+      - name: voice_id
+        type: String
+      - name: volume
+        type: float8
+      hasChanged: 0
+    isComplete: 0
+  - name: GetReply
+    type: 0
+    query: "query GetReply{\n    device_response{\n        messages\n    }\n}"
+    queryString: device_response
+    returnType: device_response
+    queryOptions:
+    - ad_content
+    - ad_content_by_pk
+    - apmt
+    - apmt_by_pk
+    - apmt_clinic_business_hour
+    - apmt_conf
+    - apmt_conf_by_pk
+    - apmt_employee
+    - apmt_employee_by_pk
+    - apmt_employee_procedure
+    - apmt_employee_procedure_by_pk
+    - apmt_procedure
+    - apmt_procedure_by_pk
+    - apmt_procedure_category
+    - apmt_procedure_category_by_pk
+    - binding
+    - binding_by_pk
+    - binding_tag
+    - binding_tag_by_pk
+    - coupon
+    - coupon_by_pk
+    - coupon_participant
+    - coupon_participant_aggregate
+    - d_member_postback
+    - d_member_postback_by_pk
+    - d_member_session
+    - device_member
+    - device_member_by_pk
+    - device_member_tag
+    - device_member_tag_by_pk
+    - device_response
+    - disability_card
+    - disability_card_by_pk
+    - event
+    - event_by_pk
+    - human_agent_response
+    - id_card
+    - id_card_by_pk
+    - iii_tts_conf
+    - kf_feedback
+    - kf_feedback_by_pk
+    - lottery
+    - lottery_by_pk
+    - lottery_participant
+    - lottery_participant_by_pk
+    - lottery_prize
+    - lottery_prize_aggregate
+    - lottery_prize_by_pk
+    - meco_procedure
+    - meco_procedure_by_pk
+    - meco_reservation
+    - meco_reservation_config
+    - meco_reservation_period
+    - meco_reservation_period_by_pk
+    - meco_visit_config
+    - meco_visit_log
+    - meco_visit_log_by_pk
+    - meco_yuan_apply_service
+    - meco_yuan_apply_service_by_pk
+    - meco_yuan_survey
+    - meco_yuan_survey_by_pk
+    - member
+    - member_by_pk
+    - message
+    - nlp_feedback
+    - nlp_feedback_by_pk
+    - poll
+    - poll_by_pk
+    - poll_participant
+    - poll_participant_aggregate
+    - poll_participant_by_pk
+    - privacy
+    - quiz
+    - quiz_by_pk
+    - quiz_participant
+    - quiz_participant_aggregate
+    - quiz_participant_by_pk
+    - quiz_question
+    - quiz_question_aggregate
+    - quiz_question_by_pk
+    - quiz_question_option
+    - quiz_question_option_aggregate
+    - quiz_question_option_by_pk
+    - quiz_result
+    - quiz_result_aggregate
+    - quiz_result_by_pk
+    - realsun_disease
+    - realsun_disease_by_pk
+    - realsun_exam
+    - realsun_exam_by_pk
+    - realsun_item
+    - realsun_item_by_pk
+    - realsun_medical_record
+    - realsun_medical_record_by_pk
+    - realsun_vital_sign
+    - realsun_vital_sign_by_pk
+    - reservation
+    - reservation_aggregate
+    - reservation_by_pk
+    - reservation_period
+    - reservation_period_by_pk
+    - siir_aitek_face
+    - sm_carousel
+    - sm_carousel_by_pk
+    - sm_carousel_item
+    - sm_carousel_item_btn
+    - sm_carousel_item_by_pk
+    - sm_carousel_item_choice
+    - sm_carousel_item_choice_by_pk
+    - sm_image_map
+    - sm_image_map_by_pk
+    - sm_image_map_item
+    - sm_image_map_item_by_pk
+    - sm_nav
+    - sm_nav_by_pk
+    - sm_nav_item
+    - sm_nav_item_by_pk
+    - stream
+    - stream_archive
+    - stream_by_pk
+    - stream_device_member
+    - stream_participant
+    - stream_participant_aggregate
+    - stream_tag
+    - stream_timeline
+    - stream_timeline_by_pk
+    - survey
+    - survey_by_pk
+    - survey_participant
+    - survey_participant_aggregate
+    - survey_participant_by_pk
+    - survey_question
+    - survey_question_by_pk
+    - survey_question_option
+    - survey_question_option_aggregate
+    - survey_question_option_by_pk
+    - t_care_continuous_prescription
+    - t_care_continuous_prescription_by_pk
+    - t_care_medicine
+    - t_care_prescription_image
+    - tag
+    - tag_aggregate
+    - tag_by_pk
+    - tag_trigger
+    - tag_trigger_by_pk
+    - tag_trigger_participant
+    - tag_trigger_participant_by_pk
+    - trace_url
+    - trace_url_by_pk
+    - unity_asset
+    - user_device
+    - virtual_idol_conf
+    - vonage_broadcast
+    - vonage_broadcast_aggregate
+    - vonage_broadcast_by_pk
+    - vonage_broadcast_device_member
+    - vonage_broadcast_device_member_by_pk
+    - vonage_broadcast_log
+    - vonage_broadcast_log_aggregate
+    - vonage_broadcast_log_by_pk
+    - vonage_broadcast_tag
+    - vonage_broadcast_tag_by_pk
+    - vonage_config
+    - vonage_event
+    - vonage_event_by_pk
+    - yj_article
+    - yj_article_aggregate
+    - yj_article_by_pk
+    - yj_article_tag
+    - yj_article_tag_by_pk
+    - yj_binding
+    - yj_seminar
+    - yj_seminar_by_pk
+    - yj_seminar_link
+    - yj_seminar_link_by_pk
+    - yj_seminar_tag
+    fields:
+    - index: 0
+      name: messages
+      type: jsonb
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: messages
+        type: jsonb
+      - name: response_type
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: response_type
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: messages
+        type: jsonb
+      - name: response_type
+        type: String
+      hasChanged: 0
+    isComplete: 0
+  mutations:
+  - name: GetEntry
+    type: 1
+    query: "mutation getEntry{\n    Entry{\n        debug_msg\n        is_live\n       
+      message\n        result\n        skill_name\n    }\n}"
+    queryString: Entry
+    returnType: EntryResp
+    queryOptions:
+    - Entry
+    - ValidateApplyService
+    - ValidateDisabilityCard
+    - ValidateIdCard
+    - ValidateSurvey
+    - delete_disability_card
+    - delete_disability_card_by_pk
+    - delete_id_card
+    - delete_id_card_by_pk
+    - delete_stream_participant
+    - insert_cgu_emotion
+    - insert_d_member_postback
+    - insert_d_member_postback_one
+    - insert_disability_card
+    - insert_disability_card_one
+    - insert_id_card
+    - insert_id_card_one
+    - insert_kf_feedback
+    - insert_kf_feedback_one
+    - insert_lottery_participant
+    - insert_lottery_participant_one
+    - insert_meco_reservation
+    - insert_meco_reservation_one
+    - insert_meco_yuan_apply_service
+    - insert_meco_yuan_apply_service_one
+    - insert_meco_yuan_survey
+    - insert_meco_yuan_survey_one
+    - insert_member
+    - insert_member_one
+    - insert_message
+    - insert_message_log
+    - insert_message_one
+    - insert_nlp_feedback
+    - insert_nlp_feedback_one
+    - insert_nlp_recommendation
+    - insert_poll_participant
+    - insert_poll_participant_one
+    - insert_quiz_participant
+    - insert_quiz_participant_one
+    - insert_reservation
+    - insert_reservation_one
+    - insert_siir_aitek_face
+    - insert_siir_aitek_face_one
+    - insert_stream_archive
+    - insert_stream_archive_one
+    - insert_stream_participant
+    - insert_stream_participant_one
+    - insert_stream_timeline
+    - insert_stream_timeline_one
+    - insert_survey_participant
+    - insert_survey_participant_one
+    - insert_t_care_continuous_prescription
+    - insert_t_care_continuous_prescription_one
+    - insert_t_care_prescription_image
+    - insert_t_care_prescription_image_one
+    - insert_tag_trigger_participant
+    - insert_tag_trigger_participant_one
+    - insert_vonage_event
+    - insert_vonage_event_one
+    - insert_yj_article_timeline
+    - insert_yj_binding
+    - insert_yj_binding_one
+    - update_coupon_participant
+    - update_coupon_participant_many
+    - update_d_member_postback
+    - update_d_member_postback_by_pk
+    - update_d_member_postback_many
+    - update_d_member_session
+    - update_d_member_session_many
+    - update_device_member
+    - update_device_member_by_pk
+    - update_device_member_many
+    - update_disability_card
+    - update_disability_card_by_pk
+    - update_disability_card_many
+    - update_id_card
+    - update_id_card_by_pk
+    - update_id_card_many
+    - update_lottery_participant
+    - update_lottery_participant_by_pk
+    - update_lottery_participant_many
+    - update_meco_yuan_survey
+    - update_meco_yuan_survey_by_pk
+    - update_meco_yuan_survey_many
+    - update_member
+    - update_member_by_pk
+    - update_member_many
+    - update_nlp_feedback
+    - update_nlp_feedback_by_pk
+    - update_nlp_feedback_many
+    - update_poll_participant
+    - update_poll_participant_by_pk
+    - update_poll_participant_many
+    - update_quiz_participant
+    - update_quiz_participant_by_pk
+    - update_quiz_participant_many
+    - update_reservation
+    - update_reservation_by_pk
+    - update_reservation_many
+    - update_stream_archive
+    - update_stream_archive_many
+    - update_stream_participant
+    - update_stream_participant_many
+    - update_survey_participant
+    - update_survey_participant_by_pk
+    - update_survey_participant_many
+    - update_trace_url
+    - update_trace_url_by_pk
+    - update_trace_url_many
+    - update_vonage_broadcast
+    - update_vonage_broadcast_by_pk
+    - update_vonage_broadcast_log
+    - update_vonage_broadcast_log_by_pk
+    - update_vonage_broadcast_log_many
+    - update_vonage_broadcast_many
+    - update_vonage_event
+    - update_vonage_event_by_pk
+    - update_vonage_event_many
+    fields:
+    - index: 0
+      name: debug_msg
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: debug_msg
+        type: String
+      - name: is_live
+        type: Boolean
+      - name: message
+        type: String
+      - name: result
+        type: json
+      - name: skill_name
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: is_live
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: debug_msg
+        type: String
+      - name: is_live
+        type: Boolean
+      - name: message
+        type: String
+      - name: result
+        type: json
+      - name: skill_name
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: message
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: debug_msg
+        type: String
+      - name: is_live
+        type: Boolean
+      - name: message
+        type: String
+      - name: result
+        type: json
+      - name: skill_name
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: result
+      type: json
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: debug_msg
+        type: String
+      - name: is_live
+        type: Boolean
+      - name: message
+        type: String
+      - name: result
+        type: json
+      - name: skill_name
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: skill_name
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: debug_msg
+        type: String
+      - name: is_live
+        type: Boolean
+      - name: message
+        type: String
+      - name: result
+        type: json
+      - name: skill_name
+        type: String
+      hasChanged: 0
+    isComplete: 0
+  - name: InsertMessages
+    type: 1
+    query: 
+    queryString: insert_message
+    returnType: message_mutation_response
+    queryOptions:
+    - Entry
+    - ValidateApplyService
+    - ValidateDisabilityCard
+    - ValidateIdCard
+    - ValidateSurvey
+    - delete_device_member_tag
+    - delete_device_member_tag_by_pk
+    - delete_disability_card
+    - delete_disability_card_by_pk
+    - delete_id_card
+    - delete_id_card_by_pk
+    - delete_stream_participant
+    - insert_cgu_emotion
+    - insert_d_member_postback
+    - insert_d_member_postback_one
+    - insert_device_member_tag
+    - insert_device_member_tag_one
+    - insert_disability_card
+    - insert_disability_card_one
+    - insert_id_card
+    - insert_id_card_one
+    - insert_kf_feedback
+    - insert_kf_feedback_one
+    - insert_lottery_participant
+    - insert_lottery_participant_one
+    - insert_meco_reservation
+    - insert_meco_reservation_one
+    - insert_meco_yuan_apply_service
+    - insert_meco_yuan_apply_service_one
+    - insert_meco_yuan_survey
+    - insert_meco_yuan_survey_one
+    - insert_member
+    - insert_member_one
+    - insert_message
+    - insert_message_log
+    - insert_message_one
+    - insert_nlp_feedback
+    - insert_nlp_feedback_one
+    - insert_nlp_recommendation
+    - insert_poll_participant
+    - insert_poll_participant_one
+    - insert_quiz_participant
+    - insert_quiz_participant_one
+    - insert_reservation
+    - insert_reservation_one
+    - insert_siir_aitek_face
+    - insert_siir_aitek_face_one
+    - insert_stream_archive
+    - insert_stream_archive_one
+    - insert_stream_participant
+    - insert_stream_participant_one
+    - insert_stream_timeline
+    - insert_stream_timeline_one
+    - insert_survey_participant
+    - insert_survey_participant_one
+    - insert_t_care_continuous_prescription
+    - insert_t_care_continuous_prescription_one
+    - insert_t_care_prescription_image
+    - insert_t_care_prescription_image_one
+    - insert_tag_trigger_participant
+    - insert_tag_trigger_participant_one
+    - insert_vonage_event
+    - insert_vonage_event_one
+    - insert_yj_article_timeline
+    - insert_yj_binding
+    - insert_yj_binding_one
+    - update_coupon_participant
+    - update_coupon_participant_many
+    - update_d_member_postback
+    - update_d_member_postback_by_pk
+    - update_d_member_postback_many
+    - update_d_member_session
+    - update_d_member_session_many
+    - update_device_member
+    - update_device_member_by_pk
+    - update_device_member_many
+    - update_disability_card
+    - update_disability_card_by_pk
+    - update_disability_card_many
+    - update_id_card
+    - update_id_card_by_pk
+    - update_id_card_many
+    - update_lottery_participant
+    - update_lottery_participant_by_pk
+    - update_lottery_participant_many
+    - update_meco_yuan_survey
+    - update_meco_yuan_survey_by_pk
+    - update_meco_yuan_survey_many
+    - update_member
+    - update_member_by_pk
+    - update_member_many
+    - update_nlp_feedback
+    - update_nlp_feedback_by_pk
+    - update_nlp_feedback_many
+    - update_poll_participant
+    - update_poll_participant_by_pk
+    - update_poll_participant_many
+    - update_quiz_participant
+    - update_quiz_participant_by_pk
+    - update_quiz_participant_many
+    - update_reservation
+    - update_reservation_by_pk
+    - update_reservation_many
+    - update_stream_archive
+    - update_stream_archive_many
+    - update_stream_participant
+    - update_stream_participant_many
+    - update_survey_participant
+    - update_survey_participant_by_pk
+    - update_survey_participant_many
+    - update_trace_url
+    - update_trace_url_by_pk
+    - update_trace_url_many
+    - update_vonage_broadcast
+    - update_vonage_broadcast_by_pk
+    - update_vonage_broadcast_log
+    - update_vonage_broadcast_log_by_pk
+    - update_vonage_broadcast_log_many
+    - update_vonage_broadcast_many
+    - update_vonage_event
+    - update_vonage_event_by_pk
+    - update_vonage_event_many
+    fields:
+    - index: 0
+      name: affected_rows
+      type: Int
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: affected_rows
+        type: Int
+      - name: returning
+        type: message
+      hasChanged: 0
+    isComplete: 0
+  subscriptions: []
+  loading: 0
